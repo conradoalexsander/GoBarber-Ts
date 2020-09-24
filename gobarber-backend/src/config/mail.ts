@@ -12,7 +12,7 @@ export default {
   driver: process.env.MAIL_DRIVER || 'ethereal',
   defaults: {
     from: {
-      email: 'dev@codando.xyz',
+      email: 'equipe-codando@codando.xyz',
       name: 'Dev da Codando',
     },
   },

@@ -8,13 +8,8 @@ import IMailProvider from '../models/IMailProvider';
 import ISendMailDTO from '../dtos/ISendMailDTO';
 import IMailTemplateProvider from '../../MailTemplateProvider/models/IMailtemplateProvider';
 
-interface IMessage {
-  to: string;
-  body: string;
-}
-
 @injectable()
-export default class EtherealMailProvider implements IMailProvider {
+export default class SESMailProvider implements IMailProvider {
   private client: Transporter;
 
   constructor(
@@ -25,7 +20,9 @@ export default class EtherealMailProvider implements IMailProvider {
     this.client = nodemailer.createTransport({
       SES: new aws.SES({
         apiVersion: '2010-12-01',
-        region: 'us-east-2',
+        accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+        secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY_ID,
+        region: process.env.AWS_REGION,
       }),
     });
   }
