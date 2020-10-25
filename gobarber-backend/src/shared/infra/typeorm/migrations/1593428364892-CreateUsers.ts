@@ -1,5 +1,4 @@
 import { MigrationInterface, QueryRunner, Table } from 'typeorm';
-import { formatDistanceToNow } from 'date-fns';
 
 export default class CreateUsers1593428364892 implements MigrationInterface {
   public async up(queryRunner: QueryRunner): Promise<void> {
