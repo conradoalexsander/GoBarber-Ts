@@ -42,6 +42,7 @@
       }
     ],
     "import/prefer-default-export": "off",
+    "import/no-duplicates":"off",
     "prettier/prettier": "error",
     "no-underscore-dangle": "off",
     "react/jsx-props-no-spreading": "off",
