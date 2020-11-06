@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
+    "rootDir": "./src" ,
     "target": "es5" ,
     "module": "commonjs" ,
     "outDir": "./dist" ,
-    "rootDir": "./src" ,
     "strict": true ,
     "strictPropertyInitialization": false,
     "baseUrl": "./src",
@@ -18,5 +18,11 @@
     "emitDecoratorMetadata": true,
     "skipLibCheck": true ,
     "forceConsistentCasingInFileNames": true
-  }
+  },
+  "exclude": [
+    "coverage",
+    "node_modules",
+    "./jest.config.js",
+    "./prettier.config.js",
+  ]
 }
