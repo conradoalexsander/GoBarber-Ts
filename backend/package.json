@@ -13,7 +13,7 @@
   "dependencies": {
     "@types/redis": "^2.8.27",
     "@typescript-eslint/eslint-plugin": "^3.4.0",
-    "aws-sdk": "^2.757.0",
+    "aws-sdk": "^2.814.0",
     "bcryptjs": "^2.4.3",
     "celebrate": "^13.0.3",
     "class-transformer": "^0.3.1",
